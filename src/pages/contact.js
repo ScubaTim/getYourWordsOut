@@ -17,8 +17,9 @@ export default function Contact() {
             </Row>
             <Card className={`${styles.FormCard} ${"mb-5 p-4"}`}>
                 <Form
-                    method="post"
-                    action="https://www.flexyform.com/f/79bd6f427289a4bd2adf8288f90494c29876cc70"
+                    name="contact"
+                    method="POST"
+                    data-netlify="true"
                 >
                     <h3 className={`${"text-center"}`}>Enter Your Info</h3>
                     <hr className="mb-4" style={{ backgroundColor: "#a2eae0" }} />

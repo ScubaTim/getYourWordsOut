@@ -62,8 +62,8 @@ export default function Home() {
               <CardText>
                 <p>Paula Troina is passionate about vividly breathing life into her clients’ ventures. She loves getting words on paper, to enhance and change lives.</p>
                 <p>Paula has a Bachelor of Science in Journalism, along with 33 years of telecommunications experience.</p>
-                <p>Her diverse professional background includes writing, marketing and telecommunications sales/management experience.</p>
-                <p>When she's not writing, editing or at the beach, Paula can be found with her nose in a book, a cat or two on her lap, and a hand curled around a cup of tea.</p>
+                <p>Her diverse professional background includes writing, editing, marketing, sales and management experience.</p>
+                <p>When she's not writing, editing or at the beach, Paula can be found with her nose in a book, a cat or two on her lap, and a hand curled around a warm cup of tea.</p>
               </CardText>
             </Col>
             <Col className="ml-5 pl-5 my-auto d-none d-lg-block">
