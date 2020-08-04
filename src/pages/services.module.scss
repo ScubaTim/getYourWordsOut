@@ -1,0 +1,14 @@
+@import '../styles/global.scss';
+
+.Card {
+    box-shadow: $lightShadow;
+    li {
+        color: $black;
+    }
+}
+
+.CenteredCards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

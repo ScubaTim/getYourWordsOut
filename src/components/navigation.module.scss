@@ -1,0 +1,21 @@
+@import '../styles/global.scss';
+
+.Navbar {
+    background-color: $tan;
+    a {
+        color: $darkBlue;
+    }
+}
+
+.Border {
+    border-bottom: 1px solid rgba(53, 53, 53, 0.3);
+    box-shadow: $lightShadow;
+}
+
+
+.Toggler {
+    background-color: $turquoise;
+}
+.Toggler:focus {
+    outline: none;
+}

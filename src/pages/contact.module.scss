@@ -1,0 +1,21 @@
+@import '../styles/global.scss';
+
+.FormCard {
+    margin: 0 12vw;
+    box-shadow: $lightShadow;
+}
+
+@media (max-width: 600px) {
+    .FormCard {
+        margin: 0 1.25rem;
+    }
+}
+
+.ButtonRow {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.SubmitButton {
+    background-color: $darkBlue;
+}

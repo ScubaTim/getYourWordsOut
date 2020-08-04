@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@800&display=swap');
+
+//Palette Colors
+$darkBlue: #0f7e9b;
+$lightBlue: #ecf9ff;
+$turquoise: #a2eae0;
+$tan: #fcf5ee;
+$pink: rgba(249, 172, 187, 0.5);
+$black: rgb(53, 53, 53);
+
+$backgroundImage: url('../../static/brillant.png');
+$shadow: 4px 6px 8px rgba(53, 53, 53, 0.4);
+$lightShadow: 2px 2px 6px rgba(53,53,53,0.1);
+
+* {
+    box-sizing: border-box;
+    word-wrap: normal;
+}
+
+body {
+    background-color: $tan;
+    color: $black;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+.PageContainer {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+}
+
+hr {
+    height: 1px;
+    background-color: $pink;
+}
+
+li {
+    color: $darkBlue;
+}
+li span {
+    color: $black;
+}
+
+.BackgroundTexture {
+    background-image: $backgroundImage;
+}
+
+.Link {
+    padding: 0.65rem 1rem;
+}
+
+.Link:hover {
+    background-color: #ffffff;
+    border-radius: 8px;
+    text-decoration: none;
+}
