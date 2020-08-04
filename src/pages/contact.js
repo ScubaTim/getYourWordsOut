@@ -16,7 +16,7 @@ export default function Contact() {
                 </Col>
             </Row>
             <Card className={`${styles.FormCard} ${"mb-5 p-4"}`}>
-                <Form
+                <form
                     name="contact"
                     method="POST"
                     data-netlify="true"
@@ -24,23 +24,23 @@ export default function Contact() {
                     <h3 className={`${"text-center"}`}>Enter Your Info</h3>
                     <hr className="mb-4" style={{ backgroundColor: "#a2eae0" }} />
                     <FormGroup>
-                        <Label for="exampleEmail">Name</Label>
-                        <Input type="text" name="fullname" placeholder="Enter your full name" />
+                        <label for="exampleEmail">Name</label>
+                        <input type="text" name="fullname" placeholder="Enter your full name" />
                     </FormGroup>
                     <FormGroup>
-                        <Label for="exampleEmail">Email</Label>
-                        <Input type="email" name="email" placeholder="Enter your email address" />
+                        <label for="exampleEmail">Email</label>
+                        <input type="email" name="email" placeholder="Enter your email address" />
                     </FormGroup>
                     <FormGroup>
-                        <Label for="exampleText">Message</Label>
-                        <Input type="textarea" name="message" rows="8" placeholder="Please provide a brief description of your needs." />
+                        <label for="exampleText">Message</label>
+                        <input type="textarea" name="message" rows="8" placeholder="Please provide a brief description of your needs." />
                     </FormGroup>
                     <Row>
                         <Col className={styles.ButtonRow}>
-                            <Button size="lg" color="info" className={styles.SubmitButton} type="submit">Submit</Button>
+                            <button size="lg" color="info" className={styles.SubmitButton} type="submit">Submit</button>
                         </Col>
                     </Row>
-                </Form>
+                </form>
             </Card>
             <Footer border />
         </Container>
