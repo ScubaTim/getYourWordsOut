@@ -16,30 +16,24 @@ export default function Contact() {
                 </Col>
             </Row>
             <Card className={`${styles.FormCard} ${"mb-5 p-4"}`}>
-                <form
-                    name="contact"
-                    method="POST"
-                    data-netlify="true"
-                >
-                    <h3 className={`${"text-center"}`}>Enter Your Info</h3>
-                    <hr className="mb-4" style={{ backgroundColor: "#a2eae0" }} />
-                    <FormGroup>
-                        <label for="exampleEmail">Name</label>
-                        <input type="text" name="fullname" placeholder="Enter your full name" />
-                    </FormGroup>
-                    <FormGroup>
-                        <label for="exampleEmail">Email</label>
-                        <input type="email" name="email" placeholder="Enter your email address" />
-                    </FormGroup>
-                    <FormGroup>
-                        <label for="exampleText">Message</label>
-                        <input type="textarea" name="message" rows="8" placeholder="Please provide a brief description of your needs." />
-                    </FormGroup>
-                    <Row>
-                        <Col className={styles.ButtonRow}>
-                            <button size="lg" color="info" className={styles.SubmitButton} type="submit">Submit</button>
-                        </Col>
-                    </Row>
+                <form name="contactMe" netlify netlify-honeypot="bot-field" hidden>
+                    <input type="text" name="name" />
+                    <input type="email" name="email" />
+                    <textarea name="message"></textarea>
+                </form>
+                <form name="contact" method="POST" data-netlify="true">
+                    <p>
+                        <label>Your Name: <input type="text" name="name" /></label>
+                    </p>
+                    <p>
+                        <label>Your Email: <input type="email" name="email" /></label>
+                    </p>
+                    <p>
+                        <label>Message: <textarea name="message"></textarea></label>
+                    </p>
+                    <p>
+                        <button type="submit">Send</button>
+                    </p>
                 </form>
             </Card>
             <Footer border />
