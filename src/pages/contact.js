@@ -21,12 +21,12 @@ export default function Contact() {
                     <hr className="mb-5" style={{ backgroundColor: "#a2eae0" }} />
                     <input type="hidden" name="form-name" value="contact" />
                     <FormGroup>
-                        <Label>Your Name:</Label>
-                        <Input type="text" name="name" />
+                        <Label>Name:</Label>
+                        <Input type="text" name="name" placeholder="Enter your full name" />
                     </FormGroup>
                     <FormGroup>
-                        <Label>Your Email:</Label>
-                        <Input type="email" name="email" />
+                        <Label>Email:</Label>
+                        <Input type="email" name="email" placeholder="Enter your email address" />
                     </FormGroup>
                     <FormGroup>
                         <Label>Message:</Label>
