@@ -15,19 +15,24 @@ export default function Contact() {
                     <h5 className="m-5 text-center">Email me and let's make something happen together!</h5>
                 </Col>
             </Row>
-            <Card className={`${styles.FormCard} ${"mb-5 p-4"}`}>
+            <Card className={`${styles.FormCard} ${"mb-5 pt-4 pl-5 pr-5 pb-5"}`}>
                 <Form name="contact" method="POST" data-netlify="true">
+                    <h3 className={`${"text-center"}`}>Enter Your Info</h3>
+                    <hr className="mb-5" style={{ backgroundColor: "#a2eae0" }} />
                     <input type="hidden" name="form-name" value="contact" />
                     <FormGroup>
-                        <Label>Your Name: <Input type="text" name="name" /></Label>
+                        <Label>Your Name:</Label>
+                        <Input type="text" name="name" />
                     </FormGroup>
                     <FormGroup>
-                        <Label>Your Email: <Input type="email" name="email" /></Label>
+                        <Label>Your Email:</Label>
+                        <Input type="email" name="email" />
                     </FormGroup>
                     <FormGroup>
-                        <Label>Message: <Input type="textarea" name="message"></Input></Label>
+                        <Label>Message:</Label>
+                        <Input type="textarea" name="message" />
                     </FormGroup>
-                    <Button type="submit">Send</Button>
+                    <Button size="lg" className="mt-3" color="info" type="submit">Send</Button>
                 </Form>
             </Card>
             <Footer border />
