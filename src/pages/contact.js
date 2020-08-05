@@ -16,21 +16,19 @@ export default function Contact() {
                 </Col>
             </Row>
             <Card className={`${styles.FormCard} ${"mb-5 p-4"}`}>
-                <form name="contact" method="POST" data-netlify="true">
+                <Form name="contact" method="POST" data-netlify="true">
                     <input type="hidden" name="form-name" value="contact" />
-                    <p>
-                        <label>Your Name: <input type="text" name="name" /></label>
-                    </p>
-                    <p>
-                        <label>Your Email: <input type="email" name="email" /></label>
-                    </p>
-                    <p>
-                        <label>Message: <textarea name="message"></textarea></label>
-                    </p>
-                    <p>
-                        <button type="submit">Send</button>
-                    </p>
-                </form>
+                    <FormGroup>
+                        <Label>Your Name: <Input type="text" name="name" /></Label>
+                    </FormGroup>
+                    <FormGroup>
+                        <Label>Your Email: <Input type="email" name="email" /></Label>
+                    </FormGroup>
+                    <FormGroup>
+                        <Label>Message: <Input type="textarea" name="message"></Input></Label>
+                    </FormGroup>
+                    <Button type="submit">Send</Button>
+                </Form>
             </Card>
             <Footer border />
         </Container>
