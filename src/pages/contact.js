@@ -30,7 +30,7 @@ export default function Contact() {
                     </FormGroup>
                     <FormGroup>
                         <Label>Message:</Label>
-                        <Input type="textarea" name="message" />
+                        <Input type="textarea" name="message" rows="8" placeholder="Please provide a brief description of your needs." />
                     </FormGroup>
                     <Button size="lg" className="mt-3" color="info" type="submit">Send</Button>
                 </Form>
